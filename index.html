@@ -41,11 +41,12 @@
           },
           height: {
             '20': '92px',
-            new: '503.44px',
+            new: '530.44px',
             new1: '450px',
             new2: '470px',
             new3: '296px',
             new4: '350px',
+            img: '200px',
             signh: '40px',
 
             upi: '80px',
@@ -54,6 +55,7 @@
 
           },
           width: {
+            img: '700px',
             signw: '120.17px',
             postpaidImg: '473px',
           },
@@ -69,29 +71,25 @@
           },
           theme: {
             screens: {
-              'mobile': '320px',
-              // => @media (min-width: 320px) { ... }
-              'tablet': '640px',
-              // => @media (min-width: 640px) { ... }
-
+              'mobile': '0px',
+              'tablet': '768px',
               'laptop': '1024px',
-              // => @media (min-width: 1024px) { ... }
-
               'desktop': '1280px',
-              // => @media (min-width: 1280px) { ... }
             },
           }
         }
       }
     }
   </script>
+
 </head>
 
-<body class="font-['Inter'] w-screen ">
+
+<body class="font-['Inter'] w-screen select-all border overflow-x-hidden">
 
   <!-- nav bar -->
-  <nav class="flex justify-around items-center h-24 py-123 xl:w-screen bg-red-400 ">
-    <i class="fa-solid fa-bars xl:hidden"></i>
+  <nav class="flex justify-around items-center h-24 py-123 w-screen  ">
+    <i class="fa-solid fa-bars xl:hidden text-3xl"></i>
     <div>
       <img class="h-14" src="img/paytm_logo.png" alt="paytm_logo">
     </div>
@@ -114,69 +112,88 @@
         more.</span></p>
   </div>
   <!-- Hero section -->
-  <div class="w-100vw  flex   items-center justify-around my-40 relative bottom-18 ">
-    <div class=" relative right-96 bottom-14">
-      <img class="h-upi " src="img/1654517453942.png" alt="">
-      <p class="text-6xl font-bold leading-extra-loose pt-12">India's Most-loved<br>Payments App</p>
-      <p class="text-xl font-medium pt-3">Recharge & pay bills, book flights & movie tickets,<br> open a savings
+  <div class="w-screen flex flex-col md:flex md:justify-around md:my-36 relative ">
+    <div
+      class=" relative flex flex-col justify-center items-center  md:flex  md:flex-col md:items-center  md:right-96 md:bottom-14">
+      <img class="relative top-8 md:right-52  h-upi " src="img/1654517453942.png" alt="">
+      <p
+        class=" text-center relative sm:mt-16 text-7xl md:mt-0 md:text-left md:text-6xl md:top-10 font-bold leading-extra-loose pt-12">
+        India's
+        Most-loved<br>Payments
+        App</p>
+      <p class=" text-center relative  text-lg md:top-10 md:text-left md:text-xl font-medium pt-3">Recharge &
+        pay bills,
+        book flights
+        &
+        movie
+        tickets,<br class="hidden md:block"> open a
+        savings
         account,
         invest in
-        stocks & mutual<br>
+        stocks & mutual<br class="hidden md:block">
         funds,
         and do a lot more.</p>
       <div
-        class="flex my-10 items-center border border-black rounded-full bg-black text-white absolute px-5 py-2 hover:bg-white  hover:text-black">
+        class="  px-16 relative top-10 md:right-28 md:top-20 flex  items-center border border-black rounded-full bg-black text-white  px-5 py-2 hover:bg-white  hover:text-black">
         <p class="font-medium text-base">Download Paytm App</p>
         <i class="fa-brands fa-apple text-xl mx-3"></i>
         <i class="fa-brands fa-google-play"></i>
       </div>
     </div>
-    <img class=" md:w-528 md:h-new absolute right-0 " src="img/1656568118664.webp" alt="">
+    <img class="mt-24 md:w-528 md:h-new md:absolute right-0 md:pb-6 " src="img/1656568118664.webp" alt="">
   </div>
   <!-- Recharge & Pay Bills on Paytm. -->
   <div class=" flex flex-col items-center bg-signcolor py-20 text-white">
-    <h1 class=" font-bold text-4xl relative right-96">Recharge & Pay Bills on Paytm.</h1>
-    <div class="flex items-center ">
-      <div
-        class=" h-44 w-36 rounded-xl transition duration-300 ease-in-out  hover:bg-rechargeHover  flex flex-col justify-center items-center py-4 relative top-5 right-36">
-        <img class="h-16 relative right-7 top-3" src="img/1626251017535.png" alt="">
-        <p class="font-semibold text-base py-4 relative right-5  top-3">Recharge <br>Prepaid<br> Mobile<i
-            class="fa-solid fa-angle-right relative left-1"></i>
-        </p>
+    <h1 class=" md:font-bold md:text-4xl relative md:right-96">Recharge & Pay Bills on Paytm.</h1>
+    <div class="flex-wrap md:flex justify-center md:items-center">
+
+      <div class="flex">
+        <div
+          class=" h-44 w-36 rounded-xl transition duration-300 ease-in-out  hover:bg-rechargeHover  flex flex-col justify-center items-center py-4 relative top-5 md:right-36">
+          <img class="h-16 relative right-7 top-3" src="img/1626251017535.png" alt="">
+          <p class="font-semibold text-base py-4 relative right-5  top-3">Recharge <br>Prepaid<br> Mobile<i
+              class="fa-solid fa-angle-right relative left-1"></i>
+          </p>
+        </div>
+        <div
+          class=" h-44 w-36 rounded-xl transition duration-300 ease-in-out   hover:bg-rechargeHover  flex flex-col justify-center items-center py-4 relative top-5 md:right-28">
+          <img class="h-16 relative right-7 top-3 " src="img/1626778824903.png" alt="">
+          <p class="font-semibold text-base py-4 relative right-5  top-3 ">Pay <br>Rent<br> Payment <i
+              class="fa-solid fa-angle-right relative left-1"></i></p>
+        </div>
       </div>
-      <div
-        class=" h-44 w-36 rounded-xl transition duration-300 ease-in-out   hover:bg-rechargeHover  flex flex-col justify-center items-center py-4 relative top-5 right-28">
-        <img class="h-16 relative right-7 top-3 " src="img/1626778824903.png" alt="">
-        <p class="font-semibold text-base py-4 relative right-5  top-3 ">Pay <br>Rent<br> Payment <i
-            class="fa-solid fa-angle-right relative left-1"></i></p>
+      <div class="flex">
+        <div
+          class="h-44 w-36 rounded-xl transition duration-300 ease-in-out   hover:bg-rechargeHover  flex flex-col justify-center items-center py-4 relative top-5 md:right-20">
+          <img class="h-16 relative right-7 top-3" src="img/1626251043534.png" alt="">
+          <p class="font-semibold text-base py-4  relative right-5  top-3">Pay <br>Electricity<br> Bill <i
+              class="fa-solid fa-angle-right relative left-1"></i></p>
+        </div>
+        <div
+          class="h-44 w-36 rounded-xl transition duration-300 ease-in-out   hover:bg-rechargeHover  flex flex-col justify-center items-center py-4 relative top-5 md:right-12">
+          <img class="h-16 relative right-7 top-3" src="img/1626251101045.png" alt="">
+          <p class="font-semibold text-base py-4  relative right-5  top-3">Recharge <br>DTN <br>Connection<i
+              class="fa-solid fa-angle-right relative left-1"></i>
+          </p>
+        </div>
       </div>
-      <div
-        class="h-44 w-36 rounded-xl transition duration-300 ease-in-out   hover:bg-rechargeHover  flex flex-col justify-center items-center py-4 relative top-5 right-20">
-        <img class="h-16 relative right-7 top-3" src="img/1626251043534.png" alt="">
-        <p class="font-semibold text-base py-4  relative right-5  top-3">Pay <br>Electricity<br> Bill <i
-            class="fa-solid fa-angle-right relative left-1"></i></p>
+      <div class="flex">
+        <div
+          class="h-44 w-36 rounded-xl transition duration-300 ease-in-out   hover:bg-rechargeHover  flex flex-col justify-center items-center py-4 relative top-5 md:right-4">
+          <img class="h-16 relative right-7 top-3" src="img/1626251127863.png" alt="">
+          <p class="font-semibold text-base py-4 relative right-5  top-3">Book<br> Gas<br> Cylinder <i
+              class="fa-solid fa-angle-right relative left-1"></i></p>
+        </div>
+        <div
+          class="h-44 w-36 rounded-xl transition duration-300 ease-in-out   hover:bg-rechargeHover  flex flex-col justify-center items-center py-4 relative top-5 md:left-4">
+          <img class="h-16 relative right-7 top-3" src="img/1627454209116.png" alt="">
+          <p class="font-semibold text-base py-4 relative right-5  top-3">Pay <br>Credit<br> Card Bill <i
+              class="fa-solid fa-angle-right relative left-1"></i></p>
+        </div>
       </div>
+
       <div
-        class="h-44 w-36 rounded-xl transition duration-300 ease-in-out   hover:bg-rechargeHover  flex flex-col justify-center items-center py-4 relative top-5 right-12">
-        <img class="h-16 relative right-7 top-3" src="img/1626251101045.png" alt="">
-        <p class="font-semibold text-base py-4  relative right-5  top-3">Recharge <br>DTN <br>Connection<i
-            class="fa-solid fa-angle-right relative left-1"></i>
-        </p>
-      </div>
-      <div
-        class="h-44 w-36 rounded-xl transition duration-300 ease-in-out   hover:bg-rechargeHover  flex flex-col justify-center items-center py-4 relative top-5 right-4">
-        <img class="h-16 relative right-7 top-3" src="img/1626251127863.png" alt="">
-        <p class="font-semibold text-base py-4 relative right-5  top-3">Book<br> Gas<br> Cylinder <i
-            class="fa-solid fa-angle-right relative left-1"></i></p>
-      </div>
-      <div
-        class="h-44 w-36 rounded-xl transition duration-300 ease-in-out   hover:bg-rechargeHover  flex flex-col justify-center items-center py-4 relative top-5 left-4">
-        <img class="h-16 relative right-7 top-3" src="img/1627454209116.png" alt="">
-        <p class="font-semibold text-base py-4 relative right-5  top-3">Pay <br>Credit<br> Card Bill <i
-            class="fa-solid fa-angle-right relative left-1"></i></p>
-      </div>
-      <div
-        class="h-44 w-36 rounded-xl transition duration-300 ease-in-out   hover:bg-rechargeHover  flex flex-col justify-center items-center py-4 relative top-5 left-12">
+        class="h-44 w-36 rounded-xl transition duration-300 ease-in-out hover:bg-rechargeHover flex flex-col justify-center items-center py-4 relative top-5 md:left-12">
         <img class="h-16 relative right-7 top-3" src="img/1626268580682.png" alt="">
         <p class="font-semibold text-base py-4 relative right-5  top-3"> All <br>Payment <br>Service <i
             class="fa-solid fa-angle-right relative left-1"></i></p>
@@ -185,49 +202,61 @@
   </div>
 
   <!-- Book & Buy on Paytm. -->
-  <div class=" flex flex-col items-center bg-buy py-20 text-white ">
-    <h1 class="font-bold text-4xl relative right-96 pr-40">Book & Buy on Paytm.</h1>
-    <div class="flex items-center ">
-      <div
-        class=" h-40 w-36 rounded-xl transition duration-300 ease-in-out   hover:bg-bookHover  flex flex-col justify-center items-center py-4 relative top-5 right-36">
-        <img class="h-16 relative right-7 top-3 " src="img/1626259710574.png" alt="">
-        <p class="font-bold text-base py-4  relative right-5  top-3">Movie<br>
-          Tickets<i class="fa-solid fa-angle-right relative left-1"></i>
-        </p>
+  <div class=" flex flex-col justify-center items-center bg-buy py-20 text-white ">
+    <h1 class="md:font-bold md:text-4xl relative md:right-96 md:pr-40">Book & Buy on Paytm.</h1>
+    <div class=" flex-wrap md:flex justify-center md:items-center md:flex md:items-center flex-wrap  ">
+      <div class="flex">
+        <div
+          class=" h-40 w-36 rounded-xl transition duration-300 ease-in-out hover:bg-bookHover  flex flex-col justify-center items-center py-4 relative top-5 md:right-36">
+          <img class="h-16 relative right-7 top-3 " src="img/1626259710574.png" alt="">
+          <p class="font-bold text-base py-4  relative right-5  top-3">Movie<br>
+            Tickets<i class="fa-solid fa-angle-right relative left-1"></i>
+          </p>
+        </div>
+
+        <div
+          class="  h-40 w-36 rounded-xl transition duration-300 ease-in-out  hover:bg-bookHover flex flex-col justify-center items-center py-4 relative top-5 md:right-28">
+          <img class="h-16 relative right-7 top-3 " src="img/1626259884425.png" alt="">
+          <p class="font-semibold text-base py-4  relative right-5  top-3 ">Flight<br>
+            Tickets <i class="fa-solid fa-angle-right relative left-1"></i></p>
+        </div>
       </div>
-      <div
-        class=" h-40 w-36 rounded-xl transition duration-300 ease-in-out  hover:bg-bookHover flex flex-col justify-center items-center py-4 relative top-5 right-28">
-        <img class="h-16 relative right-7 top-3 " src="img/1626259884425.png" alt="">
-        <p class="font-semibold text-base py-4  relative right-5  top-3 ">Flight<br>
-          Tickets <i class="fa-solid fa-angle-right relative left-1"></i></p>
+
+      <div class="flex">
+        <div
+          class=" h-40 w-36 rounded-xl transition duration-300 ease-in-out  hover:bg-bookHover flex flex-col justify-center items-center py-4 relative top-5 md:right-20">
+          <img class="h-16 relative right-7 top-3" src="img/1626260477699.png" alt="">
+          <p class="font-semibold text-base py-4  relative right-5  top-3">Bus<br>
+            Tickets <i class="fa-solid fa-angle-right relative left-1"></i></p>
+        </div>
+
+        <div
+          class=" h-40 w-36 rounded-xl transition duration-300 ease-in-out  hover:bg-bookHover flex flex-col justify-center items-center py-4 relative top-5 md:right-12">
+          <img class="h-16 relative right-7 top-3" src="img/1626260495975.png" alt="">
+          <p class="font-semibold text-base py-4  relative right-5  top-3">Train<br>
+            Tickets<i class="fa-solid fa-angle-right relative left-1"></i>
+          </p>
+        </div>
       </div>
-      <div
-        class="h-40 w-36 rounded-xl transition duration-300 ease-in-out  hover:bg-bookHover flex flex-col justify-center items-center py-4 relative top-5 right-20">
-        <img class="h-16 relative right-7 top-3" src="img/1626260477699.png" alt="">
-        <p class="font-semibold text-base py-4  relative right-5  top-3">Bus<br>
-          Tickets <i class="fa-solid fa-angle-right relative left-1"></i></p>
+
+      <div class="flex">
+        <div
+          class=" h-40 w-36 rounded-xl transition duration-300 ease-in-out  hover:bg-bookHover flex flex-col justify-center items-center py-4 relative top-5 md:right-4">
+          <img class="h-16 relative right-7 top-3" src="img/1626259953707.png" alt="">
+          <p class="font-semibold text-base py-4 relative right-5  top-3">Car &<br>
+            Bikes <i class="fa-solid fa-angle-right relative left-1"></i></p>
+        </div>
+
+        <div
+          class=" h-40 w-36 rounded-xl transition duration-300 ease-in-out  hover:bg-bookHover flex flex-col justify-center items-center py-4 relative top-5 md:left-4">
+          <img class="h-16 relative right-7 top-3" src="img/1626259968563.png" alt="">
+          <p class="font-semibold text-base py-4 relative right-5  top-3">International<br>
+            Flights<i class="fa-solid fa-angle-right relative left-1"></i></p>
+        </div>
       </div>
+
       <div
-        class="h-40 w-36 rounded-xl transition duration-300 ease-in-out  hover:bg-bookHover flex flex-col justify-center items-center py-4 relative top-5 right-12">
-        <img class="h-16 relative right-7 top-3" src="img/1626260495975.png" alt="">
-        <p class="font-semibold text-base py-4  relative right-5  top-3">Train<br>
-          Tickets<i class="fa-solid fa-angle-right relative left-1"></i>
-        </p>
-      </div>
-      <div
-        class="h-40 w-36 rounded-xl transition duration-300 ease-in-out  hover:bg-bookHover flex flex-col justify-center items-center py-4 relative top-5 right-4">
-        <img class="h-16 relative right-7 top-3" src="img/1626259953707.png" alt="">
-        <p class="font-semibold text-base py-4 relative right-5  top-3">Car &<br>
-          Bikes <i class="fa-solid fa-angle-right relative left-1"></i></p>
-      </div>
-      <div
-        class="h-40 w-36 rounded-xl transition duration-300 ease-in-out  hover:bg-bookHover flex flex-col justify-center items-center py-4 relative top-5 left-4">
-        <img class="h-16 relative right-7 top-3" src="img/1626259968563.png" alt="">
-        <p class="font-semibold text-base py-4 relative right-5  top-3">International<br>
-          Flights<i class="fa-solid fa-angle-right relative left-1"></i></p>
-      </div>
-      <div
-        class="h-40 w-36 rounded-xl transition duration-300 ease-in-out  hover:bg-bookHover flex flex-col justify-center items-center py-4 relative top-5 left-12">
+        class=" h-40 w-36 rounded-xl transition duration-300 ease-in-out  hover:bg-bookHover flex flex-col justify-center items-center py-4 relative top-5 md:left-12">
         <img class="h-16 relative right-7 top-3" src="img/1626450848003.png" alt="">
         <p class="font-semibold text-base py-4 relative right-5  top-3"> Invest<br>
           in Stocks<i class="fa-solid fa-angle-right relative left-1"></i></p>
@@ -237,9 +266,9 @@
   <!-- Paytm Payment Istruction   -->
   <section class="flex flex-col bg-instruction">
     <!-- Paytm Wallet -->
-    <section class=" flex flex-col items-center justify-around my-32 ">
-      <h1 class="text-5xl font-bold relative right-60 bottom-2 pr-8">Paytm Payment Instruments</h1>
-      <div class="flex  rounded-xl bg-white pl-32 pr-10  pt-20 pb-24 relative top-6">
+    <section class=" flex flex-col items-center justify-around md:my-32 ">
+      <h1 class=" font-bold relative bottom-2 md:right-60 md:text-5xl md:pr-8">Paytm Payment Instruments</h1>
+      <div class="flex  rounded-xl bg-white pl-32 pr-10  pt-20 pb-24 relative top-6 sm:flex-nowrap flex-wrap">
         <div class=" flex flex-col">
           <div div class="flex items-center relative top-12  "><img class=" h-wallet " src="img/1617861564011.png"
               alt="">
@@ -253,14 +282,13 @@
             21
             million stores, websites and apps.</p>
           <div
-            class="flex my-10 items-center border border-black rounded-full bg-black text-white absolute bottom-20 px-5 py-2 hover:bg-white  hover:text-black">
+            class="flex top-96 md:my-10 items-center border border-black rounded-full bg-black text-white relative md:bottom-20 px-5 py-2 hover:bg-white  hover:text-black">
             <p class="font-medium text-base">Download the App</p>
             <i class="fa-brands fa-apple text-xl mx-3"></i>
             <i class="fa-brands fa-google-play"></i>
           </div>
         </div>
-
-        <img class="  h-new1 relative right-0" src="img/1618577020961.png" alt="">
+        <img class="relative h-img  mt-52  md:h-new1  md:right-0  md:top-0" src="img/1618577020961.png" alt="">
       </div>
 
 
@@ -628,7 +656,7 @@
   </section>
 
   <!-- Download Paytm App to Pay from anywhere -->
-  <div class="flex justify-around items-center py-16">
+  <div class="flex mobile justify-around items-center py-16">
     <div class="flex relative right-12">
       <p class="text-xl font-bold">Download Paytm App<br> to Pay from anywher</p>
       <img class="mx-2" src="img/71229188.svg" alt="">
